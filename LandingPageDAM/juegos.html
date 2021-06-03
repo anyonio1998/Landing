@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/ico.png">
+    <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+    <title>Antonio García-Risco</title>
+</head>
+
+<body   onload="inicializada();">
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" id="icono" class="icono"> Menú</a>
+                <div class="enlaces uno" id="enlaces">
+                    <a href="index.html">Inicio</a>
+                    <a href="CV.html"  target="_blank"> CV</a>
+                    <a href="https://github.com/anyonio1998"  target="_blank">GitHub</a>
+                    <a href="juegos.html" > Juegos/Galerias </a>
+
+                </div>
+            </nav>
+        </div>
+            <div id="PantallaJuego1">
+                 <canvas id="canvas" >
+                </canvas>
+            </div>
+
+            <div id="PantallaJuego2">
+                <table align="center" border="0">
+        <tr>
+            <td width="300px" align="center"><p id="tresR">TRES EN RAYA</p></td>
+        </tr>
+    </table>
+    <table align="center" border="1px">
+        <tr>
+        <td width="100px" height="100px" id="c0" onclick="pcelda(0)"> </td>
+        <td width="100px" height="100px" id="c1" onclick="pcelda(1)"> </td>
+        <td width="100px" height="100px" id="c2" onclick="pcelda(2)"> </td>
+    </tr>
+    <tr>
+        <td width="100px" height="100px" id="c3" onclick="pcelda(3)"> </td>
+        <td width="100px" height="100px" id="c4" onclick="pcelda(4)"> </td>
+        <td width="100px" height="100px" id="c5" onclick="pcelda(5)"> </td>
+    </tr>
+    <tr>
+        <td width="100px" height="100px" id="c6" onclick="pcelda(6)"> </td>
+        <td width="100px" height="100px" id="c7" onclick="pcelda(7)"> </td>
+        <td width="100px" height="100px" id="c8" onclick="pcelda(8)"> </td>
+    </tr>
+</table>
+
+    <table align="center" border="0px">
+        <tr>
+            <td width="300px" align="center">
+                <br>
+                <a href="javascript:location.reload()">
+                    <button>Reiniciar</button>
+                </a>
+            </td>
+        </tr>
+     </table>
+            </div>
+            <h2 id="gals" align="center">Galerias</h2>
+            <a  id="goals" align="center" href="G1.html">Galeria 1</a>
+            <a  id="goals" align="center" href="G2.html">Galeria 2</a>
+
+
+    </header>
+    <div class="wave">
+        <div style="height: 80px;  width: 100%; overflow: hidden; position:fixed; bottom:0;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+    </div>
+    <div></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

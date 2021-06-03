@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Stint Ultra Condensed', cursive;
+    background-image: url(../img/fondo2.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: flex-start;
+   
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+   
+}
+
+.icono {
+    display: block;
+    z-index: 100000000;
+   animation: moverIzquierda 6s ease-in;
+    float:right;
+}
+
+header {
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+img {
+    display: block;
+    height: 525px;
+    width: 80%;
+    object-fit: cover;
+    animation: moverIzquierda 4s ease-in;
+}
+
+.textos {
+    width: 70%;
+    color: #fff;
+}
+
+.textos h1 {
+    font-size: 100px;
+    animation: moverDerecha 2s ease-in;
+}
+
+.textos h2 {
+    font-size: 40px;
+    color: darkred;
+    animation: moverDerecha 4s ease-in;
+}
+
+.textos a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    width: 150px;
+    border-bottom-right-radius: 1px solid #fff;
+    text-align: center;
+    padding: 10px 0;
+    animation: moverDerecha 6s ease-in;
+}
+
+.wave {
+    height: 100px;
+    width: 100%;
+}
+
+.enlaces {
+    position: fixed;
+    display: flex;
+    top: 0;
+    background: #000;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh; /* tamaño de cada celda*/
+    left: 0;
+    flex-direction: column;
+    width: 20%;
+    transition: all 1s ease;
+    background: #3b3434;
+    font-size: 32px;
+    border-radius: 10px;
+}
+
+.uno {
+    -webkit-clip-path: circle(0% at 0 0);
+    clip-path: circle(0% at 0 0);
+}
+
+.dos {
+    -webkit-clip-path: circle(150% at 0 0);
+    clip-path: circle(150% at 0 0);
+}
+
+.dos a:hover {
+    color: brown;
+    transform: scale(1.25);
+}
+#canvas{
+    width: 700px;
+    height: 300px;
+    border:2px solid white;
+
+}
+#PantallaJuego1{ 
+    width: 700px;
+    height: 300px;
+    justify-content: center;
+    margin: 0px auto;
+
+}
+#PantallaJuego2{
+    visibility: collapse;
+
+}
+#tresR{
+    font-size: 32px;
+    color: grey;
+}  
+#gals{
+    margin-top: 100px;
+    font-size: 36px;
+} 
+#goals{
+    font-size: 36px;
+    margin-left: 350px;
+  
+}
+@keyframes moverIzquierda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha {
+    0% {
+        opacity: 0;
+        transform: translateX(400px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes arriba {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+}
+
+@media screen and (max-width:800px) {
+    img {
+        height: 370px;
+        width: 100%;
+    }
+    .textos h1 {
+        font-size: 70px;
+    }
+    .textos h2 {
+        font-size: 25px;
+    } 
+    #PantallaJuego2{
+        visibility: visible;
+        justify-content: center;
+        margin-top:-250px;
+        height: 50%;
+        margin-right: 25%;
+        margin-left: 25%;
+
+    }
+    #PantallaJuego1{
+        visibility: collapse;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    img {
+        height: 250px;
+        width: 100%;
+    }
+    .textos h1 {
+        font-size: 40px;
+    }
+    .textos h2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .container {
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .textos {
+        width: 100%;
+        text-align: center;
+    }
+    .textos h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    img {
+        height: 160px;
+    }
+    .textos h1 {
+        font-size: 35px;
+    }
+    .textos a {
+        width: 120px;
+    }
+    .textos h2 {
+        font-size: 15px;
+    }
+   
+
+}
+
+
+
+
+
+
+
+
+
+
